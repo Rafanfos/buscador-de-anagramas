@@ -31,7 +31,9 @@ function buscarAnagramas(palavra, palavras) {
     let segunda = alfabetizar(palavras[i]);
 
     if (primeira === segunda) {
-      anagramas.push(palavras[i]);
+      if (palavra !== palavras[i]) {
+        anagramas.push(palavras[i]);
+      }
     }
   }
   return anagramas;
