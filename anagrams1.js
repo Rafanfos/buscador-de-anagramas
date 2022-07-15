@@ -40,13 +40,22 @@ function buscarAnagramas(palavra, palavras) {
 }
 
 function listarAnagramas(palavras) {
+  let imagem = document.createElement("img");
   let frase = document.createElement("span");
-  frase.innerText = "Foram encontrados os anagramas:";
-  resultado.append(frase);
-  for (let i = 0; i < palavras.length; i++) {
-    let itemLista = document.createElement("li");
-    itemLista.innerText = palavras[i];
-    lista.append(itemLista);
+
+  if (palavras.length == 0) {
+    imagem.src = img5;
+    frase.innerText = "Infelizmente essa palvra não possui anagramas.";
+    resultado.append(frase, imagem);
+  } else {
+    imagem.src = img4;
+    frase.innerText = "Foram encontrados os anagramas:";
+    resultado.append(frase, imagem);
+    for (let i = 0; i < palavras.length; i++) {
+      let itemLista = document.createElement("li");
+      itemLista.innerText = palavras[i];
+      lista.append(itemLista);
+    }
   }
 }
 
