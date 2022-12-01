@@ -1,4 +1,4 @@
-# Identificador de anagramas
+# Buscador de anagramas
 
 
 ## Introdução
