@@ -7,8 +7,6 @@ Foi desenvolvida uma aplicação capas de detectar todos os anagramas de uma pal
 
 ## Funcionamento
 
-### 1- Preparando seu Repositório
-
 Digite a palavra no input e clique no botão buscar, que os anagramas da plavra digitada aparecerão abaixo.
 
 
