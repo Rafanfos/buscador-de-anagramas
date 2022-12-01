@@ -1,4 +1,4 @@
-# Indetificador de anagramas
+# Identificador de anagramas
 
 
 ## Introdução
